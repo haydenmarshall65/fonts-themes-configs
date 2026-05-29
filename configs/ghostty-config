@@ -1,0 +1,19 @@
+#   /Users/haydenmarshall/Library/Application Support/com.mitchellh.ghostty/config
+
+theme = Night Owl
+
+background-opacity = 1
+
+font-size = 14.5
+
+background-blur = 1
+
+# background = 000
+
+font-thicken=true
+
+keybind = opt+h=goto_split:left
+keybind = opt+j=goto_split:bottom
+keybind = opt+k=goto_split:top
+keybind = opt+l=goto_split:right
+

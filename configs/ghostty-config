@@ -1,6 +1,8 @@
 #   /Users/haydenmarshall/Library/Application Support/com.mitchellh.ghostty/config
 
-theme = Night Owl
+#theme = Night Owl
+
+theme = Gruvbox Dark
 
 background-opacity = 1
 

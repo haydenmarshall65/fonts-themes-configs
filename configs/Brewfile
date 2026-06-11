@@ -1,53 +1,104 @@
+tap "auth0/auth0-cli"
+tap "rhettbull/osxphotos"
+# Microsoft Azure CLI 2.0
 brew "azure-cli"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Cross-platform make
 brew "cmake"
+# Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Load/unload environment variables based on $PWD
 brew "direnv"
+# Terminal visual disk space navigator
 brew "diskonaut"
+# Pack, ship and run any application as a lightweight container
 brew "docker"
+# Utility to bundle libraries into executables for macOS
 brew "dylibbundler"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Software library to render fonts
 brew "freetype"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Image manipulation library
 brew "jpeg"
+# Handy way to save and run project-specific commands
 brew "just"
+# Multi-format archive and compression library
 brew "libarchive"
+# Rainbows and unicorns in your console!
 brew "lolcat"
+# Mac App Store command-line interface
 brew "mas"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
+# Simple text editor with clickable interface
 brew "msedit"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Small build system for use with gyp or CMake
 brew "ninja"
+# Package manager for Microsoft development platform including .NET
 brew "nuget"
+# Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Low-level library for pixel manipulation
 brew "pixman"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Object-relational database system
 brew "postgresql@15", link: true
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
+# Image format providing lossless and lossy compression for web images
 brew "webp"
+# Library for loading images as SDL surfaces and textures
 brew "sdl2_image"
+# Unicode conversion routines, fast
 brew "simdutf"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Improved tinyxml (in memory efficiency and size)
 brew "tinyxml2"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Google's JavaScript engine
 brew "v8"
+# Watch files and take action when they change
 brew "watchman"
+# Convert XML to another format (based on XSL or other tools)
 brew "xmlto"
+# Programming language designed for robustness, optimality, and clarity
 brew "zig"
+# General-purpose lossless data-compression library
 brew "zlib"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "auth0/auth0-cli/auth0"
-brew "rhettbull/osxphotos/osxphotos"
+# Window peeking utility app
 cask "dockdoor"
+# Developer platform
 cask "dotnet-sdk"
+# OpenJDK distribution from Microsoft
 cask "microsoft-openjdk@21"
 mas "Bear", id: 1091189122
 mas "Boop", id: 1518425043

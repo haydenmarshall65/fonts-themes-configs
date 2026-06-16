@@ -191,16 +191,6 @@ alias useropen="auth0 users open "
 # Vite+ bin (https://viteplus.dev)
 #. "$HOME/.vite-plus/env"
 
-export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
-  "endpointCredentials": [
-    {
-      "endpoint": "https://pkgs.dev.azure.com/jtbmodules/Jtb.Modules/_packaging/Jtb.Modules/nuget/v3/index.json",
-      "username": "hayden@jtbatesgroup.onmicrosoft.com",
-      "password": "Q17mJ6H6neaULS6l/zvcDXFqwGKp+yZtf7N3kL/TkfrdYtPxK9Ot8ytZDGBjSeWSlr57Nsi/ThpFTLeExFeBkx8YoocSfn6BupLBVqlc+5YlJux8RXDoJnTHs35NBagNBH15EZ+k1zOZ0Th/F59LQzkfJHTMDZC190DvWFaFOhBPWzHroUiSQqcu0S2SbwSRBQdmrymd1a8oC30tH/4fRBFIWClGpix5lJdN/YaCExpeF+nQ2N9Fis8FqbRlyUwwi6XaF2PA6PBqNw9l99xcDaqvS9la23q9t0ook3AxV+S8al+oSeHxkAnFMUbnqn7SCG9+E98MgzLPnTPRi/9za53LWUCfOu72WcUiO8cIb0l5deKS50RrwDfN1qPpTHnX"
-    }
-  ]
-}'
-
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"

@@ -121,9 +121,10 @@ plugins=(
 
 alias t="tmux new -s jtb"
 alias ta="tmux a -t jtb"
-alias cat="bat"
+alias cat="bat -Pp"
 alias lcat="lolcat"
 alias grep="rg"
+alias cd="z"
 
 ##### START OMZ PLUS! ##################################################################
 export OMZ_PLUS=${ZDOTDIR:-$HOME}/.omz-plus
@@ -174,12 +175,34 @@ function git_push {
   BUFFER="git push"
   CURSOR=$(( ${#BFFER} - 1 ))
 }
+
+function git_add {
+  BUFFER="git add -u"
+}
 zle -N git_commit_quotes
 zle -N git_push
+zle -N git_add
 bindkey '^g' git_commit_quotes
 bindkey '^p' git_push
+bindkey '^a' git_add
 
 alias usersearch="auth0 users search --query "
 alias useropen="auth0 users open "
 # Vite+ bin (https://viteplus.dev)
 #. "$HOME/.vite-plus/env"
+
+export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
+  "endpointCredentials": [
+    {
+      "endpoint": "https://pkgs.dev.azure.com/jtbmodules/Jtb.Modules/_packaging/Jtb.Modules/nuget/v3/index.json",
+      "username": "hayden@jtbatesgroup.onmicrosoft.com",
+      "password": "Q17mJ6H6neaULS6l/zvcDXFqwGKp+yZtf7N3kL/TkfrdYtPxK9Ot8ytZDGBjSeWSlr57Nsi/ThpFTLeExFeBkx8YoocSfn6BupLBVqlc+5YlJux8RXDoJnTHs35NBagNBH15EZ+k1zOZ0Th/F59LQzkfJHTMDZC190DvWFaFOhBPWzHroUiSQqcu0S2SbwSRBQdmrymd1a8oC30tH/4fRBFIWClGpix5lJdN/YaCExpeF+nQ2N9Fis8FqbRlyUwwi6XaF2PA6PBqNw9l99xcDaqvS9la23q9t0ook3AxV+S8al+oSeHxkAnFMUbnqn7SCG9+E98MgzLPnTPRi/9za53LWUCfOu72WcUiO8cIb0l5deKS50RrwDfN1qPpTHnX"
+    }
+  ]
+}'
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
+alias ls="eza --icons "

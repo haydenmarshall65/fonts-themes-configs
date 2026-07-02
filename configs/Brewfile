@@ -1,5 +1,5 @@
 tap "auth0/auth0-cli"
-tap "rhettbull/osxphotos"
+tap "microsoft/mssql-release", "https://github.com/Microsoft/homebrew-mssql-release", trusted: { formulae: ["msodbcsql17"] }
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -34,6 +34,12 @@ brew "gnutls"
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Language server for `golangci-lint`
+brew "golangci-lint-langserver"
+# Language server for the Go language
+brew "gopls"
+# Post-modern modal text editor
+brew "helix"
 # Image manipulation library
 brew "jpeg"
 # Handy way to save and run project-specific commands
@@ -44,6 +50,8 @@ brew "libarchive"
 brew "lolcat"
 # Mac App Store command-line interface
 brew "mas"
+# Unicode conversion routines, fast
+brew "simdutf"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # Simple text editor with clickable interface
@@ -62,16 +70,18 @@ brew "pixman"
 brew "pkgconf"
 # Object-relational database system
 brew "postgresql@15", link: true
+# Python Language Server for the Language Server Protocol
+brew "python-lsp-server"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# SDL2 compatibility layer that uses SDL3 behind the scenes
+brew "sdl2-compat"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # Library for loading images as SDL surfaces and textures
 brew "sdl2_image"
-# Unicode conversion routines, fast
-brew "simdutf"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -82,6 +92,8 @@ brew "tinyxml2"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Google's JavaScript engine
 brew "v8"
 # Watch files and take action when they change
@@ -92,8 +104,12 @@ brew "xmlto"
 brew "zig"
 # General-purpose lossless data-compression library
 brew "zlib"
+# Language Server for Zig
+brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Sqlcmd and Bcp for Microsoft(R) SQL Server(R)
+brew "microsoft/mssql-release/mssql-tools", trusted: true
 # Window peeking utility app
 cask "dockdoor"
 # Developer platform
@@ -106,5 +122,3 @@ mas "Hidden Bar", id: 1452453066
 mas "Proton Pass for Safari", id: 6502835663
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
-npm "@tailwindcss/cli"
-npm "tailwindcss"

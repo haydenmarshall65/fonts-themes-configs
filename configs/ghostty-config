@@ -19,3 +19,5 @@ keybind = opt+j=goto_split:bottom
 keybind = opt+k=goto_split:top
 keybind = opt+l=goto_split:right
 
+
+shell-integration-features = ssh-env,ssh-terminfo

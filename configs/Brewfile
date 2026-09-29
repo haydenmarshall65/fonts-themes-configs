@@ -1,13 +1,27 @@
 tap "auth0/auth0-cli"
+tap "docker/tap", trusted: true
 tap "microsoft/mssql-release", "https://github.com/Microsoft/homebrew-mssql-release", trusted: { formulae: ["msodbcsql17"] }
+tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# New way to see and navigate directory trees
+brew "broot"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Software library to render fonts
+brew "freetype"
+# Low-level library for pixel manipulation
+brew "pixman"
 # Cross-platform make
 brew "cmake"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Load/unload environment variables based on $PWD
@@ -15,31 +29,39 @@ brew "direnv"
 # Terminal visual disk space navigator
 brew "diskonaut"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Utility to bundle libraries into executables for macOS
 brew "dylibbundler"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Software library to render fonts
-brew "freetype"
+# CLI tool for interacting with Forgejo
+brew "forgejo-cli"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Render markdown on the CLI
+brew "glow"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Fast linters runner for Go
+brew "golangci-lint"
 # Language server for `golangci-lint`
 brew "golangci-lint-langserver"
 # Language server for the Go language
 brew "gopls"
 # Post-modern modal text editor
 brew "helix"
+# Review-first terminal diff viewer for agent-authored changesets
+brew "hunk"
+# Java language specific implementation of the Language Server Protocol
+brew "jdtls"
 # Image manipulation library
 brew "jpeg"
 # Handy way to save and run project-specific commands
@@ -48,12 +70,12 @@ brew "just"
 brew "libarchive"
 # Rainbows and unicorns in your console!
 brew "lolcat"
+# Personal Knowledge Management System for the LSP
+brew "markdown-oxide"
 # Mac App Store command-line interface
 brew "mas"
 # Unicode conversion routines, fast
 brew "simdutf"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Simple text editor with clickable interface
 brew "msedit"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -62,10 +84,10 @@ brew "neovim"
 brew "ninja"
 # Package manager for Microsoft development platform including .NET
 brew "nuget"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Low-level library for pixel manipulation
-brew "pixman"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Object-relational database system
@@ -78,8 +100,6 @@ brew "ripgrep"
 brew "ruff"
 # SDL2 compatibility layer that uses SDL3 behind the scenes
 brew "sdl2-compat"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Library for loading images as SDL surfaces and textures
 brew "sdl2_image"
 # Cross-shell prompt for astronauts
@@ -98,6 +118,8 @@ brew "typescript-language-server"
 brew "v8"
 # Watch files and take action when they change
 brew "watchman"
+# CLI client for the Woodpecker Continuous Integration server
+brew "woodpecker-cli"
 # Convert XML to another format (based on XSL or other tools)
 brew "xmlto"
 # Programming language designed for robustness, optimality, and clarity
@@ -116,9 +138,14 @@ cask "dockdoor"
 cask "dotnet-sdk"
 # OpenJDK distribution from Microsoft
 cask "microsoft-openjdk@21"
-mas "Bear", id: 1091189122
+# Build, run, and govern agents across the software development lifecycle
+cask "docker/tap/sbx", trusted: true
+mas "Apple Configurator", id: 1037126344
 mas "Boop", id: 1518425043
 mas "Hidden Bar", id: 1452453066
+mas "MindNode", id: 6446116532
 mas "Proton Pass for Safari", id: 6502835663
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
+npm "@agentclientprotocol/claude-agent-acp"
+npm "@pnp/cli-microsoft365"

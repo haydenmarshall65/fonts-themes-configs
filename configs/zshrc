@@ -149,6 +149,8 @@ export PATH="/Users/haydenmarshall/Library/Android/sdk/cmdline-tools/latest/bin:
 
 alias clr="clear"
 
+alias wp="woodpecker-cli"
+
 export PATH="$HOME/Downloads/mongosh-2.5.10-darwin-arm64/bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#606060,bold'
@@ -175,13 +177,13 @@ function git_push {
   BUFFER="git push"
   CURSOR=$(( ${#BFFER} - 1 ))
 }
-
 function git_add {
   BUFFER="git add -u"
 }
 zle -N git_commit_quotes
 zle -N git_push
 zle -N git_add
+zle -N git_commit_amend
 bindkey '^g' git_commit_quotes
 bindkey '^p' git_push
 bindkey '^a' git_add
@@ -196,3 +198,9 @@ alias useropen="auth0 users open "
 eval "$(atuin init zsh)"
 
 alias ls="eza --icons "
+
+export PATH="$PATH:/opt/mssql-tools/bin"
+
+export PATH="$PATH:/Users/haydenmarshall/.deno/bin"
+
+source /Users/haydenmarshall/.config/broot/launcher/bash/br

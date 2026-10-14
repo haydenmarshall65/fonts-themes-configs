@@ -1,0 +1,83 @@
+{
+  "model": "claude-opus-5",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "atuin hook claude-code"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "atuin hook claude-code"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "atuin hook claude-code"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"Claude needs your permission\" with title \"Claude Code\" sound name \"default\"'"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"$(/bin/ls -td \"/Users/haydenmarshall/.claude/plugins/cache/daily-dev/daily-dev\"/*/ | head -1)statusline/statusline.mjs\"",
+    "refreshInterval": 10
+  },
+  "enabledPlugins": {
+    "csharp-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "caveman@caveman": true,
+    "daily.dev@daily.dev": true,
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    },
+    "daily.dev": {
+      "source": {
+        "source": "github",
+        "repo": "dailydotdev/daily"
+      }
+    },
+    "dotnet-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "dotnet/skills"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "theme": "dark"
+}

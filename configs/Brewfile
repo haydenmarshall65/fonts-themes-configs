@@ -1,6 +1,5 @@
 tap "auth0/auth0-cli"
 tap "docker/tap", trusted: true
-tap "microsoft/mssql-release", "https://github.com/Microsoft/homebrew-mssql-release", trusted: { formulae: ["msodbcsql17"] }
 tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos"
 # Command-line interface for SQLite
 brew "sqlite"
@@ -130,16 +129,11 @@ brew "zlib"
 brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Sqlcmd and Bcp for Microsoft(R) SQL Server(R)
-brew "microsoft/mssql-release/mssql-tools", trusted: true
-# Window peeking utility app
-cask "dockdoor"
 # Developer platform
 cask "dotnet-sdk"
 # OpenJDK distribution from Microsoft
 cask "microsoft-openjdk@21"
 # Build, run, and govern agents across the software development lifecycle
-cask "docker/tap/sbx", trusted: true
 mas "Apple Configurator", id: 1037126344
 mas "Boop", id: 1518425043
 mas "Hidden Bar", id: 1452453066

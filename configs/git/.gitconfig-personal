@@ -1,0 +1,6 @@
+[user]
+	name = Hayden Marshall
+	email = marshall.hayden65@gmail.com
+
+[pull]
+	rebase = true

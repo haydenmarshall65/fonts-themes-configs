@@ -1,0 +1,6 @@
+[user]
+    name = Hayden Marshall
+	email = hayden@jtbatesgroup.com
+
+[pull]
+	rebase = true

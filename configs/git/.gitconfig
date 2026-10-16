@@ -1,0 +1,6 @@
+[includeIf "gitdir:~/Projects/jtb/"]
+	path = ~/.gitconfig-jtb
+[includeIf "gitdir:~/Projects/personal"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/Projects/personal/"]
+	path = ~/.gitconfig-personal
